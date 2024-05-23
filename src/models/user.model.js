@@ -36,6 +36,10 @@ export default (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    landline: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     pinCode: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -45,8 +49,8 @@ export default (sequelize) => {
       allowNull: false,
     },
     prefix: {
-      type: DataTypes.ENUM,
-      values: ["Mr", "Miss", "Mrs", "Ms"],
+      type: DataTypes.STRING,
+
       allowNull: false,
     },
     principalName: {

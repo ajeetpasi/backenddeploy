@@ -10,7 +10,7 @@ dotenv.config({
 db.sequelize
   .sync({ alter: true })
   .then(() => {
-    app.listen(process.env.PORT || 8000, () => {
+    app.listen(process.env.PORT || 8000, "192.168.1.6", () => {
       console.log("Server is running");
     });
   })

@@ -12,6 +12,7 @@ const schoolRegistration = async (req, res) => {
       state,
       district,
       stdCode,
+      landline,
       pinCode,
       mobileNumber,
       prefix,
@@ -27,7 +28,8 @@ const schoolRegistration = async (req, res) => {
       !state ||
       !district ||
       !stdCode ||
-      !pinCode ||
+      !stdCode ||
+      !landline ||
       !mobileNumber ||
       !prefix ||
       !principalName ||
@@ -45,6 +47,7 @@ const schoolRegistration = async (req, res) => {
       state,
       district,
       stdCode,
+      landline,
       pinCode,
       mobileNumber,
       prefix,
